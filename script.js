@@ -27,13 +27,13 @@ radio.addEventListener('playing', function () {
 //! -----------------------SECTİON--------------------//
 
 function showSection(sectionId) {
-  // Tüm bölümleri gizle
+
   var sections = document.querySelectorAll('#main-content section');
   sections.forEach(function (section) {
     section.style.display = 'none';
   });
 
-  // Belirli bölümü göster
+
   var selectedSection = document.getElementById(sectionId);
   if (selectedSection) {
     selectedSection.style.display = 'block';

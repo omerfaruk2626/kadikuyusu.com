@@ -46,11 +46,34 @@ main{
     border-radius: 10px;
 }
 .d-block{
-    width: 600px;
-    height: 400px;
+    width: 600px !important;
+    height: 600px !important;
+    border-radius: 10px !important;
+    
 }
 
+#carouselExampleCaptions{
+    padding: 10px;
+    background-color: rgba(73, 71, 14, 0.41);
+    height: 100%;
+    border-radius: 10px;
+}
+#kaydol{
+    /* background-color: rgba(73, 71, 14, 0.41); */
+    border-radius: 10px;
+    /* display: flex !important; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    /* padding: 10px; */
+}
 
+#validationCustom01,
+#validationCustom02,
+#validationCustomUsername {
+    justify-content: end !important;
+}
 
 .footer {
     height: 58px;
