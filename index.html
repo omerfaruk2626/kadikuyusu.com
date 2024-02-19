@@ -15,129 +15,172 @@
 </head>
 
 <body>
-  <!--! -------------------------HEADER---------------------- -->
+  <!--? -------------------------HEADER---------------------- -->
 
-  <!--! -------------------------HEADER---------------------- -->
+  <!--? -------------------------HEADER---------------------- -->
 
-  <div class="container-fluid bg-opacity-25 bg-danger-subtle ">
-    <header>
-      <div class="head ">
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand active fw-bold" href="#">kadikuyusu.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse position-absolute end-0" id="navbarNavDropdown">
-              <ul class="navbar-nav gap-5">
-                <li class="nav-item">
-                  <a class="nav-link active fw-bold" aria-current="page" href="#">Anasayfa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active fw-bold" href="#">Tarihçe</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active fw-bold" href="#">Duyurular</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Faaliyetler
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Tarım</a></li>
-                    <li><a class="dropdown-item" href="#">Hayvancılık</a></li>
-                  </ul>
-                </li>
-                <div class="single-items">
-                  <a href="#" class="btn btn-outline-secondary fs-6">Oturum aç</a>
-                  <a href="#" class="btn btn-outline-secondary fs-6">Kaydol</a>
-                </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand active fw-bold" onclick="showSection('anasayfa')" href="#">kadikuyusu.com</a>
+        <div class="header-navbar-text">
+        <p>Gönlün gurbet etmez, bedenin olsa da uzakta. Ruhunla her an var olur, mekanlar seni yabancılaştıramaz. - Hz. Mevlana</p></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end active fw-bold" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" onclick="showSection('anasayfa')" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" onclick="showSection('tarihce')" href="#">Tarihçe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#" onclick="showSection('duyurular')"  >Duyurular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Faaliyetler
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" onclick="showSection('tarim')"  href="#">Tarım</a></li>
+                <li><a class="dropdown-item" onclick="showSection('hayvancilik')" href="#">Hayvancilik</a></li>
               </ul>
-            </div>
+            </li>
+          </ul>
+          <div class="single-items">
+            <a href="#" class="btn btn-outline-warning fs-6 text-black" onclick="showSection('oturum-ac')">Oturum Aç</a>
+            <a href="#" class="btn btn-outline-warning fs-6 text-black" onclick="showSection('kaydol')">Kaydol</a>
           </div>
-        </nav>
-      </div>
-    </header>
-  </div>
-
-  <!--! -------------------------MAİN---------------------- -->
-
-  <!--! -------------------------MAİN---------------------- -->
-
-  <main>
-    <div class="container">
-      <div class="main">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="height: 700px">
-              <img src="./images/1.jpg" class="d-block w-100 h-75 " alt="...">
-            </div>
-            <div class="carousel-item" style="height: 700px">
-              <img src="./images/2.jpg" class="d-block w-100 h-75" style="height: 700px" alt="...">
-            </div>
-            <div class="carousel-item" style="height: 700px">
-              <img src="./images/3.jpg" class="d-block w-100 h-75" style="height: 700px" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
+    </nav>
+  </header>
+
+
+  <!--? -------------------------MAİN---------------------- -->
+
+  <!--? -------------------------MAİN---------------------- -->
+
+  <main class="container-fluid">
+    <div id="main-content">
+      <!--! -------------------------ANASAYFA---------------------- -->
+
+      <!--! -------------------------ANASAYFA---------------------- -->
+      <section id="anasayfa">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide position-absolute col-xl-3 ">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/cemre.jpg" class="d-block rounded-3 w-100 h-100"  alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Cemre düşecek,havalar ısınacak</h5>
+                    <p>Her yıl 20 Şubat tarihinden başlayarak birer hafta arayla havaya, suya ve toprağa düştüğüne
+                      inanılan cemrenin ilki 19-20 Şubat'ta havaya düşüyor.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/destek.png" class="d-block " alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <h1>Anasayfa</h1>
+            <p>Web sitemize hoş geldiniz.</p>
+          </div>
+        </div>
+      </section>
+      <!--! -------------------------TARİHÇE---------------------- -->
+
+      <!--! -------------------------TARİHÇE---------------------- -->
+      <section id="tarihce" style="display:none;">
+        <h1>Tarihçe</h1>
+        <p>Web sitemizin tarihçesi hakkında bilgi bulabileceğiniz sayfa.</p>
+      </section>
+      <!--! -------------------------DUYURULAR---------------------- -->
+
+      <!--! -------------------------DUYURULAR---------------------- -->
+      <section id="duyurular" style="display:none;">
+        <h1>Duyurular</h1>
+        <p>Web sitemizin duyurular bölümü.</p>
+      </section>
+      <!--! -------------------------TARIM---------------------- -->
+
+      <!--! -------------------------TARIM---------------------- -->
+      <section id="tarim" style="display:none;">
+        <h1>Tarım</h1>
+        <p>Tarım faaliyetleri hakkında bilgi bulabileceğiniz sayfa.</p>
+      </section>
+      <!--! -------------------------HAYVANCILIK---------------------- -->
+
+      <!--! -------------------------HAYVANCILIK---------------------- -->
+      <section id="hayvancilik" style="display:none;">
+        <h1>Hayvancılık</h1>
+        <p>Hayvancılık faaliyetleri hakkında bilgi bulabileceğiniz sayfa.</p>
+      </section>
+      <!--! -------------------------LOGIN---------------------- -->
+
+      <!--! -------------------------LOGIN---------------------- -->
+      <section id="oturum-ac" style="display:none;">
+        <h1>Oturum Aç</h1>
+      </section>
+      <!--! -------------------------SINGUP---------------------- -->
+
+      <!--! -------------------------SINGUP---------------------- -->
+      <section id="kaydol" style="display:none;">
+        <h1>Kaydol</h1>
+      </section>
+
+    </div>
   </main>
 
 
-  <!--! -------------------------FOOTER---------------------- -->
+  <!--? -------------------------FOOTER---------------------- -->
 
-  <!--! -------------------------FOOTER---------------------- -->
+  <!--? -------------------------FOOTER---------------------- -->
 
-<div class="footer">
+  <div class="footer">
     <div>
-        <audio id="radio" loop >
-            <source src="https://nmicenotrt.mediatriple.net/trt_turku.aac" type="audio/mpeg">
-        </audio>
-        <button onclick="toggleRadio()">Play▶️</button>
-        <button onclick="pauseRadio()">Mute⏸️</button>
-        <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+      <audio id="radio" loop>
+        <source src="https://nmicenotrt.mediatriple.net/trt_turku.aac" type="audio/mpeg">
+      </audio>
+      <button onclick="toggleRadio()">Play▶️</button>
+      <button onclick="pauseRadio()">Mute⏸️</button>
+      <input type="range" min="0" max="0.4" step="0.01" value="0.03" onchange="setVolume(this.value)"
+        style="width: 80px; position: relative; top: 5px; ">
     </div>
-    <p>Code Fighters. All rights reserved. © 2024</p>
-</div>
-<script>
-  var radio = document.getElementById("radio");
+    <p>Ömer Faruk Sivri. All rights reserved. © 2024</p>
+  </div>
 
-  function toggleRadio() {
-      if (radio.paused) {
-          radio.play();
-      } else {
-          radio.pause();
-      }
-      radio.volume = 0.03;
-  }
-
-  function pauseRadio() {
-      radio.pause();
-  }
-
-  function setVolume(volume) {
-      radio.volume = parseFloat(volume);
-  }
-
-  radio.addEventListener('playing', function() {
-      radio.volume = 0.03;
-  });
-</script>
-
+<script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  
 </body>
 
 </html>

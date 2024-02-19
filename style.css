@@ -1,4 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    background-color: rgba(134, 132, 6, 0.78);
+    backdrop-filter: blur(1px);
+    position: relative;
+    z-index: 2;
+}
+.header-navbar-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-top: 20px;
+    padding: 20px 0 0 40px;
+    color: white; /* veya istediğiniz dikey alanı ayarlayabilirsiniz */
+  }
+
+
+.collapse navbar-collapse{
+    font-weight: bold;
+}
+
+
+
+
+main{
+    background-image: url(./images/arkaplan1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: calc(100vh - 118px);
+    padding: 20px;
+}
+#main-content{
+    padding-top: 10px;
+    background-color: rgba(73, 71, 14, 0.41);
+    backdrop-filter: blur(1px);
+    height: 100%;
+    margin: 0 10px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+.d-block{
+    width: 600px;
+    height: 400px;
+}
+
+
+
 .footer {
+    height: 58px;
     position: fixed;
     left: 0px;
     bottom: 0px;
