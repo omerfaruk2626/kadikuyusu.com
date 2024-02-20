@@ -17,11 +17,14 @@ body {
 
 /*! ------------------------NAVBAR------------------------ */
 
-#navbar{
+#navbar {
     background-color: rgba(134, 132, 6, 0.78);
-    position: relative;
+    position: fixed !important;
+    width: 95.7%;
+    /* top: 0 !important; */
     z-index: 2;
     border-radius: 10px;
+    margin: 0px 20px 0 20px;
 }
 .header-navbar-text {
     font-size: 13px;
@@ -41,6 +44,7 @@ main{
     text-align: center;
     /* height: 100vh; */
     padding: 20px;
+    margin-top: 80px;
     /* width: 100%; */
 }
 #main-content{
@@ -152,6 +156,12 @@ main{
     }
     body {
         padding: 5px;
+    }
+    main{
+        margin-top: 180px;
+    }
+    #navbar {
+        margin: 0px 5px 0 5px;
     }
     
 }
