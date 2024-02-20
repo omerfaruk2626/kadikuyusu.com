@@ -3,55 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
-#navbar{
-    background-color: rgba(134, 132, 6, 0.78);
-    backdrop-filter: blur(1px);
-    position: relative;
-    z-index: 2;
-}
-.header-navbar-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    padding-top: 20px;
-    padding: 20px 0 0 40px;
-    color: white; /* veya istediğiniz dikey alanı ayarlayabilirsiniz */
-  }
-
-
-.collapse navbar-collapse{
-    font-weight: bold;
-}
-
-
-
-
-main{
+body {
     background-image: url(./images/arkaplan1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     text-align: center;
-    height: calc(100vh - 118px);
+    margin: 0; /* Remove default margin to ensure full coverage */
     padding: 20px;
+    height: 100%;
+}
+
+
+/*! ------------------------NAVBAR------------------------ */
+
+#navbar{
+    background-color: rgba(134, 132, 6, 0.78);
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+.header-navbar-text {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 20px 0 0 30px;
+    color: white;
+  }
+
+
+/*! ------------------------MAİN------------------------ */
+
+
+main{
+    text-align: center;
+    /* height: 100vh; */
+    padding: 20px;
+    /* width: 100%; */
 }
 #main-content{
-    padding-top: 10px;
+    padding: 10px;
     background-color: rgba(73, 71, 14, 0.41);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
     height: 100%;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     /* border: 2px solid black; */
     border-radius: 10px;
 }
-.d-block{
+
+/*? ANSAYFA DİV */
+/* #carouselExampleCaptions{
+    height: calc(100vh - 180px) !important;
+} */
+
+/* .d-block{
     width: 600px !important;
     height: 600px !important;
     border-radius: 10px !important;
     
-}
+} */
 
+/*! ------------------------OTURUM AC------------------------ */
+
+
+
+#oturum-ac{
+    height: calc(100vh - 220px);
+}
 #carouselExampleCaptions{
     padding: 10px;
     background-color: rgba(73, 71, 14, 0.41);
@@ -59,6 +79,7 @@ main{
     border-radius: 10px;
 }
 #kaydol{
+    height: calc(100vh - 220px);
     /* background-color: rgba(73, 71, 14, 0.41); */
     border-radius: 10px;
     /* display: flex !important; */
@@ -69,11 +90,10 @@ main{
     /* padding: 10px; */
 }
 
-#validationCustom01,
-#validationCustom02,
-#validationCustomUsername {
-    justify-content: end !important;
-}
+
+/*! ------------------------FOOTER------------------------ */
+
+
 
 .footer {
     height: 58px;
@@ -102,4 +122,36 @@ main{
 .footer button:hover {
     background-color: #bd225d9d;
     color: rgb(255, 255, 255);
+}
+
+
+
+/*! ------------------------MEDİA QUERY------------------------ */
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .header-navbar-text {
+        font-size: 12px;
+        padding: 10px 0 0 40px;
+        color: white;
+      }
+    .footer {
+        height: 38px;
+        font-size: 9px;
+        padding-top: 2px;
+    }
+    .footer button {
+        font-size: 0.5rem;
+        padding: 3px;
+        width: 35px;
+    }
+    body {
+        padding: 5px;
+    }
+    
 }
