@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +39,12 @@ body {
     padding: 20px 0 0 30px;
     color: white;
   }
-
+#kadikuyusu-com{
+    letter-spacing: 6px;
+    color: white;
+    font-size: 35px;
+    font-family: "Cookie", cursive;
+}
 
 /*! ------------------------MAİN------------------------ */
 
@@ -56,22 +65,11 @@ main{
     /* border: 2px solid black; */
     border-radius: 10px;
 }
-
-/*? ANSAYFA DİV */
-/* #carouselExampleCaptions{
-    height: calc(100vh - 180px) !important;
-} */
-
-/* .d-block{
-    width: 600px !important;
-    height: 600px !important;
-    border-radius: 10px !important;
-    
-} */
-
+.carousel-item img {
+    height: 500px;
+    width: 400px;
+  }
 /*! ------------------------OTURUM AC------------------------ */
-
-
 
 #oturum-ac{
     height: calc(100vh - 220px);
@@ -157,11 +155,23 @@ main{
     body {
         padding: 5px;
     }
-    main{
+    main{ 
+        text-align: center;
+        padding: 20px 8px; 
         margin-top: 180px;
     }
     #navbar {
         margin: 0px 5px 0 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
     }
+    #kadikuyusu-com{
+        position: relative;
+        left: 15%;
+    }
+    .carousel-item img {
+        height: 300px !important;
+      }
     
 }
