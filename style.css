@@ -129,10 +129,17 @@ main{
 
 
 /*! ------------------------MEDİA QUERY------------------------ */
+@media screen and (max-width: 1440px) {
+    
+}
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 868px) {
     body {
         background-attachment: fixed;
+    }
+    main{ 
+        margin-top: 180px;
     }
 }
 
