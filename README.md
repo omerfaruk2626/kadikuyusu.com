@@ -1,4 +1,4 @@
-# Wellcome! Kadıyukusu Village Website!
+# Wellcome Kadıyukusu Village Website!
 
 Welcome to the repository for the Kadıyukusu Village website. This site is a digital platform designed to keep our community connected and informed. It provides updates on local news, events, and history, along with useful information on agricultural and livestock practices specific to Kadıyukusu.
 
