@@ -1,9 +1,10 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function ColorSchemesExample() {
+function CustomNavbar() {
   return (
     <>
       <Navbar expand="lg" bg="secondary" variant="dark">
@@ -34,4 +35,4 @@ function ColorSchemesExample() {
   );
 }
 
-export default ColorSchemesExample;
+export default CustomNavbar;
