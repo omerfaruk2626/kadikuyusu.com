@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.777c1d76.css",
-    "main.js": "./static/js/main.c60cf943.js",
-    "index.html": "./index.html",
-    "main.777c1d76.css.map": "./static/css/main.777c1d76.css.map",
-    "main.c60cf943.js.map": "./static/js/main.c60cf943.js.map"
+    "main.css": "/kadikuyusu.com/static/css/main.777c1d76.css",
+    "main.js": "/kadikuyusu.com/static/js/main.c60cf943.js",
+    "index.html": "/kadikuyusu.com/index.html",
+    "main.777c1d76.css.map": "/kadikuyusu.com/static/css/main.777c1d76.css.map",
+    "main.c60cf943.js.map": "/kadikuyusu.com/static/js/main.c60cf943.js.map"
   },
   "entrypoints": [
     "static/css/main.777c1d76.css",
