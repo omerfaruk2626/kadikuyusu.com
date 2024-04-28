@@ -1,11 +1,9 @@
+import React from 'react';
+
 const Home = () => {
-
     return (
-        <div class="container-fluid banner">
-            <div class="container text-center" id="banner-text"><p>Wellcome</p>
-            </div>
-        </div>
-    )
-
+        <div>Home</div>
+    );
 }
+
 export default Home;

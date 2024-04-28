@@ -1,14 +1,9 @@
+import React from 'react'
+
 const Footer = () => {
-
-    return (
-        <footer class="text-white text-center text-lg-start">
-
-            <div class="text-center p-2">
-                © 2024 Ömer Faruk Sivri
-            </div>
-        </footer>
-    )
-
+  return (
+    <div className='fixed bottom-0 bg-yellow-200 w-full text-center text-xs text-emerald-950'>© 2024 Ömer Faruk Sivri</div>
+  )
 }
 
-export default Footer;
+export default Footer
