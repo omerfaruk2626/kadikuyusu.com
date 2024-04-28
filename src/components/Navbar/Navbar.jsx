@@ -15,7 +15,7 @@ function CustomNavbar() {
             <Nav className="me-auto">
               <Nav.Link href="#">Anasayfa</Nav.Link>
               <Nav.Link href="#">Galeri</Nav.Link>
-              <Nav.Link href="#">Biz</Nav.Link>
+              <Nav.Link href="#">Biz!</Nav.Link>
               <NavDropdown title="Duyurular" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Tarım</NavDropdown.Item>
                 <NavDropdown.Item href="#">
