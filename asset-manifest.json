@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kadikuyusu.com/static/css/main.777c1d76.css",
+    "main.js": "/kadikuyusu.com/static/js/main.c60cf943.js",
+    "index.html": "/kadikuyusu.com/index.html",
+    "main.777c1d76.css.map": "/kadikuyusu.com/static/css/main.777c1d76.css.map",
+    "main.c60cf943.js.map": "/kadikuyusu.com/static/js/main.c60cf943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.777c1d76.css",
+    "static/js/main.c60cf943.js"
+  ]
+}
