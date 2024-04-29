@@ -1,8 +1,8 @@
-import React from 'react'
+import './Footer.scss'
 
 const Footer = () => {
   return (
-    <div className='fixed bottom-0 bg-yellow-200 w-full text-center text-xs text-emerald-950'>© 2024 Ömer Faruk Sivri</div>
+    <div className='footer'>© 2024 Ömer Faruk Sivri</div>
   )
 }
 

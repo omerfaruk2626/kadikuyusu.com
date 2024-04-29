@@ -1,32 +1,62 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
 
 function CustomNavbar() {
+  const [duyuruDetailsVisible, setDuyuruDetailsVisible] = React.useState(false);
+
+  const showDetails = () => {
+    setDuyuruDetailsVisible(true);
+  };
+
+  const hideDetails = () => {
+    setDuyuruDetailsVisible(false);
+  };
+
   return (
     <>
-      <Navbar expand="lg" bg="secondary" variant="dark">
+      <Navbar className='navbarTop' expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#home">Kadikuyusu.com</Navbar.Brand>
+          <Navbar.Brand href="/">Kadikuyusu.com</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#">Anasayfa</Nav.Link>
-              <Nav.Link href="#">Galeri</Nav.Link>
-              <Nav.Link href="#">Biz!</Nav.Link>
-              <NavDropdown title="Duyurular" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">Tarım</NavDropdown.Item>
-                <NavDropdown.Item href="#">
-                  Hayvancılık
-                </NavDropdown.Item>
+            <Nav className="me-auto navbarMenuArea">
+                <li className="nav-item">
+                  <NavLink className='nav-link navbarMenus' to='/' activeClassName='active'>Anasayfa</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className='nav-link navbarMenus' to='/galeri' activeClassName='active'>Galeri</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className='nav-link navbarMenus' to='/biz' activeClassName='active'>Biz!</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className='nav-link navbarMenus' to='/iletisim' activeClassName='active'>Iletisim</NavLink>
+                </li>
+              <NavDropdown className='navbarMenu text-white text-bold' title="Duyurular" id="basic-nav-dropdown">
+                <NavDropdown.Item href='/duyurular/tarim'>Tarım</NavDropdown.Item>
+                <NavDropdown.Item href='/duyurular/hayvancilik'>Hayvancılık</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#">
-                  Düğün <br /> Merasim <br /> Cenaze
+                <NavDropdown.Item
+                  onMouseLeave={hideDetails}
+                >
+                  {!duyuruDetailsVisible && (
+                    <span onMouseOver={showDetails}>
+                      Genel Duyurular
+                    </span>
+                  )}
+                  {duyuruDetailsVisible && (
+                    <div>
+                      Düğün<br />
+                      Merasim<br />
+                      Cenaze
+                    </div>
+                  )}
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">Iletisim</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
